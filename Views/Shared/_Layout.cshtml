@@ -1,0 +1,385 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]> <html class="ie8"> <![endif]-->
+<!--[if IE 9]> <html class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html>
+ <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>TexnoShop - Магазин электроники</title>
+    <meta name="description" content="Responsive modern ecommerce Html5 Template">
+    <!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='//fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic%7CPT+Gudea:400,700,400italic%7CPT+Oswald:400,700,300' rel='stylesheet' id="googlefont">
+
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/css/prettyPhoto.css">
+    <link rel="stylesheet" href="~/css/revslider.css">
+    <link rel="stylesheet" href="~/css/owl.carousel.css">
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/responsive.css">
+
+    <!-- Favicon and Apple Icons -->
+    <link rel="icon" type="image/png" href="~/images/icons/icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="~/images/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="~/images/icons/apple-icon-72x72.png">
+
+    <!--- jQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="~/js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!--[if lt IE 9]>
+        <script src="~/js/html5shiv.js"></script>
+        <script src="~/js/respond.min.js"></script>
+    <![endif]-->
+
+    <style id="custom-style">
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <div id="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="header-top-left">
+                                <ul id="top-links" class="clearfix">
+                                    <li><a href="#" title="Список желаний"><span class="top-icon top-icon-pencil"></span><span class="hide-for-xs">Список желаний</span></a></li>
+                                    <li><a href="#" title="Аккаунт"><span class="top-icon top-icon-user"></span><span class="hide-for-xs">Аккаунт</span></a></li>
+                                    <li><a asp-action="Cart" title="Корзина"><span class="top-icon top-icon-cart"></span><span class="hide-for-xs">Корзина</span></a></li>
+                                    <li><a asp-action="Checkout" title="Проверка"><span class="top-icon top-icon-check"></span><span class="hide-for-xs">Проверка</span></a></li>
+                                </ul>
+                            </div><!-- End .header-top-left -->
+                            <div class="header-top-right">
+                                <div class="header-text-container pull-right">
+                                    <p class="header-text">Добро пожаловать на TexnoShop!</p>
+                                    <p class="header-link"><a href="#">войти</a>&nbsp;или&nbsp;<a href="#">зарегистрировать аккаунт</a></p>
+                                </div><!-- End .pull-right -->
+                            </div><!-- End .header-top-right -->
+                        </div><!-- End .col-md-12 -->
+                    </div><!-- End .row -->
+                </div><!-- End .container -->
+            </div><!-- End #header-top -->
+
+            <div id="inner-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-5 col-xs-12 logo-container">
+                            <h1 class="logo clearfix">
+                                <span>Responsive eCommerce Template</span>
+                                <a asp-action="Index" title="Логотип"><img src="~/images/logo2.png" alt="Venedor Commerce Template" width="188" height="67"></a>
+                            </h1>
+                        </div><!-- End .col-md-5 -->
+                        <div class="col-md-7 col-sm-7 col-xs-12 header-inner-right">
+						<div class="header-inner-right-wrapper clearfix">
+                           <div class="dropdown-cart-menu-container pull-right">
+                                        <div class="btn-group dropdown-cart">
+                                            <button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown">
+                                                <span class="cart-menu-icon"></span>
+                                                0 предмет(ов) <span class="drop-price">- ₽0.00</span>
+                                            </button>
+
+                                            <div class="dropdown-menu dropdown-cart-menu pull-right clearfix" role="menu">
+                                                <p class="dropdown-cart-description">Недавно добавленные предметы.</p>
+                                                <ul class="dropdown-cart-product-list">
+                                                    <li class="item clearfix">
+                                                        <a href="#" title="Удалить предмет" class="delete-item"><i class="fa fa-times"></i></a>
+                                                        <a href="#" title="Изменить предмет" class="edit-item"><i class="fa fa-pencil"></i></a>
+                                                        <figure>
+                                                            <a asp-action="Product"><img src="~/images/products/thumbnails/item12.jpg" alt="phone 4"></a>
+                                                        </figure>
+                                                        <div class="dropdown-cart-details">
+                                                            <p class="item-name">
+                                                                <a asp-action="Product">Камера Optia AF Веб-камера </a>
+                                                            </p>
+                                                            <p>
+                                                                1x
+                                                                <span class="item-price">₽4999</span>
+                                                            </p>
+                                                        </div><!-- End .dropdown-cart-details -->
+                                                    </li>
+                                                    <li class="item clearfix">
+                                                        <a href="#" title="Удалить предмет" class="delete-item"><i class="fa fa-times"></i></a>
+                                                        <a href="#" title="Изменить предмет" class="edit-item"><i class="fa fa-pencil"></i></a>
+                                                        <figure>
+                                                            <a asp-action="Product"><img src="~/images/products/thumbnails/item13.jpg" alt="phone 2"></a>
+                                                        </figure>
+                                                        <div class="dropdown-cart-details">
+                                                            <p class="item-name">
+                                                                <a asp-action="Product">Оригинальная крышка Чехла для Iphonel</a>
+                                                            </p>
+                                                            <p>
+                                                                1x
+                                                                <span class="item-price">₽4999<span class="sub-price">.99</span></span>
+                                                            </p>
+                                                        </div><!-- End .dropdown-cart-details -->
+                                                    </li>
+                                                </ul>
+
+                                                <ul class="dropdown-cart-total">
+                                                    <li><span class="dropdown-cart-total-title">Доставка:</span>₽70</li>
+                                                    <li><span class="dropdown-cart-total-title">Итого:</span>₽10068<span class="sub-price">.99</span></li>
+                                                </ul><!-- .dropdown-cart-total -->
+                                                <div class="dropdown-cart-action">
+                                                    <p><a asp-action="Cart" class="btn btn-custom-2 btn-block">Корзина</a></p>
+                                                    <p><a asp-action="Checkout" class="btn btn-custom btn-block">Проверка</a></p>
+                                                </div><!-- End .dropdown-cart-action -->
+
+                                            </div><!-- End .dropdown-cart -->
+                                        </div><!-- End .btn-group -->
+                                    </div><!-- End .dropdown-cart-menu-container -->
+<div class="header-top-dropdowns pull-right">
+                                    <div class="btn-group dropdown-money">
+                                        <button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown">
+                                            <span class="hide-for-xs">Рубли</span><span class="hide-for-lg">₽</span>
+                                        </button>
+                                        <ul class="dropdown-menu pull-right" role="menu">
+                                            <li><a href="#"><span class="hide-for-xs">Евро</span><span class="hide-for-lg">&euro;</span></a></li>
+                                            <li><a href="#"><span class="hide-for-xs">Доллары</span><span class="hide-for-lg">&pound;</span></a></li>
+                                        </ul>
+                                    </div><!-- End .btn-group -->
+                                    <div class="btn-group dropdown-language">
+                                        <button type="button" class="btn btn-custom dropdown-toggle" data-toggle="dropdown">
+                                            <span class="flag-container"><img src="~/images/england-flag.png" alt="flag of england"></span>
+                                            <span class="hide-for-xs">Русский</span>
+                                        </button>
+                                        <ul class="dropdown-menu pull-right" role="menu">
+                                            <li><a href="#"><span class="flag-container"><img src="~/images/italy-flag.png" alt="flag of england"></span><span class="hide-for-xs">Английский</span></a></li>
+                                            <li><a href="#"><span class="flag-container"><img src="~/images/spain-flag.png" alt="flag of italy"></span><span class="hide-for-xs">Итальянский</span></a></li>
+                                            <li><a href="#"><span class="flag-container"><img src="~/images/france-flag.png" alt="flag of france"></span><span class="hide-for-xs">Французкий</span></a></li>
+                                            <li><a href="#"><span class="sm-separator"><img src="~/images/germany-flag.png" alt="flag of germany"></span><span class="hide-for-xs">Немецкий</span></a></li>
+                                        </ul>
+                                    </div><!-- End .btn-group -->
+                                </div><!-- End .header-top-dropdowns -->
+                        </div><!-- End .col-md-7 -->
+                    </div><!-- End .row -->
+                </div><!-- End .container -->
+
+                <div id="main-nav-container">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 clearfix">
+
+                                <nav id="main-nav">
+                                    <div id="responsive-nav">
+                                        <div id="responsive-nav-button">
+                                            Menu <span id="responsive-nav-button-icon"></span>
+                                        </div><!-- responsive-nav-button -->
+                                    </div>
+                                    <ul class="menu clearfix">
+                                        <li>
+                                            <a class="active" asp-action="Index">Главная</a>
+
+                                        </li>
+                                        <li class="mega-menu-container">
+                                            <a asp-action="Category">Магазин</a>
+                                            <div class="mega-menu clearfix">
+                                                <div class="col-5">
+                                                    <a asp-action="Category" class="mega-menu-title">Электроника</a><!-- End .mega-menu-title -->
+                                                    <ul class="mega-menu-list clearfix">
+                                                        <li><a href="#">Ноутбуки</a></li>
+                                                        <li><a href="#">Смартфоны</a></li>
+                                                        <li><a href="#">ПК</a></li>
+                                                        <li><a href="#">Планшеты</a></li>
+                                                        <li><a href="#">Телевизоры</a></li>
+                                                        <li><a href="#">Игровые консоли</a></li>
+                                                        <li><a href="#">Бытовая техника</a></li>
+                                                    </ul>
+                                                </div><!-- End .col-5 -->
+                                            </div><!-- End .mega-menu -->
+                                        </li>
+                                        <li>
+                                            <a href="#">Страницы</a>
+                                            <ul>
+                                                <li><a asp-action="Product">Продукт</a></li>
+                                                <li><a asp-action="Cart">Корзина</a></li>
+                                                <li><a asp-action="Category">Категории</a></li>
+                                                <li><a asp-action="Blog">Блог</a></li>
+                                                <li><a asp-action="Checkout">Проверка</a></li>
+                                                <li><a asp-action="About">О нас</a></li>
+                                                <li><a asp-action="Registeraccount">Регистрация аккаунта</a></li>
+                                                <li><a asp-action="Compareproducts">Сравнения продуктов</a></li>
+                                                <li><a asp-action="Login">Вход</a></li>
+                                                <li><a asp-action="Error">Ошибка</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a asp-action="Contact">Свяжитесь с нами</a></li>
+                                    </ul>
+
+                                </nav>
+
+                                <div id="quick-access">
+                                    
+
+
+                                    <form class="form-inline quick-search-form" role="form" action="#">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Искать ...">
+                                        </div><!-- End .form-inline -->
+                                        <button type="submit" id="quick-search" class="btn btn-custom"></button>
+                                    </form>
+                                </div><!-- End #quick-access -->
+                            </div><!-- End .col-md-12 -->
+                        </div><!-- End .row -->
+                    </div><!-- End .container -->
+
+                </div><!-- End #nav -->
+            </div><!-- End #inner-header -->
+        </header><!-- End #header -->
+        @RenderBody()
+    <footer id="footer">
+        <div id="newsletter-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 clearfix">
+                        <h3>Подпишитесь, чтобы получать последние новости в мире технологий</h3>
+                        <form id="register-newsletter">
+                            <input type="text" name="newsletter" required="" placeholder="Введите ваш адрес электронной почты">
+                            <input type="submit" class="btn btn-custom-3" value="ПОДПИСАТЬСЯ">
+                        </form>
+                    </div><!--End  .col-md-6 -->
+
+                </div><!-- End .row -->
+            </div><!-- End .container -->
+        </div><!-- End #newsletter-container -->
+        <div id="inner-footer">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4 col-xs-12 widget">
+                        <h3>МОЙ АККАУНТ</h3>
+                        <ul class="links">
+                            <li><a href="#">Мой аккаунт</a></li>
+                            <li><a href="#">Персональная информация</a></li>
+                            <li><a href="#">Адрес</a></li>
+                            <li><a href="#">Скидки</a></li>
+                            <li><a href="#">История покупок</a></li>
+                            <li><a href="#">Мои ваунчеры</a></li>
+                        </ul>
+                    </div><!-- End .widget -->
+
+                    <div class="col-md-3 col-sm-4 col-xs-12 widget">
+                        <h3>ИНФОРМАЦИЯ</h3>
+                        <ul class="links">
+                            <li><a href="#">Новые продукты</a></li>
+                            <li><a href="#">Топ прадаж</a></li>
+                            <li><a href="#">Специальные предложения</a></li>
+                            <li><a href="#">Производители</a></li>
+                            <li><a href="#">Поставщики</a></li>
+                            <li><a href="#">Наши магазины</a></li>
+                        </ul>
+                    </div><!-- End .widget -->
+
+                    <div class="col-md-3 col-sm-4 col-xs-12 widget">
+                        <h3>О КОМПАНИИ</h3>
+
+                        <ul class="contact-list">
+                            <li><strong>ЗАО "ТехноСтор"</strong></li>
+                            <li>Россия</li>
+                            <li>Омская область</li>
+                            <li>Щёлково 501557</li>
+                            <li>Шоссе Ломоносова, 87</li>
+                            <li>Рабочии дни: Пон. - Пят.</li>
+                            <li>Рабочии часы: 9.00 - 20.00</li>
+                        </ul>
+                    </div><!-- End .widget -->
+
+                    <div class="clearfix visible-sm"></div>
+
+                    <div class="col-md-3 col-sm-12 col-xs-12 widget">
+                        <h3>FACEBOOK (признан экстремистской организацией, запрещен на территории России.)</h3>
+
+                        <div class="facebook-likebox">
+                            <iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fenvato&amp;colorscheme=dark&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false"></iframe>
+                        </div>
+
+
+                    </div><!-- End .widget -->
+                </div><!-- End .row -->
+            </div><!-- End .container -->
+
+        </div><!-- End #inner-footer -->
+
+        <div id="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-sm-7 col-xs-12 footer-social-links-container">
+                        <ul class="social-links clearfix">
+                            <li><a href="#" class="social-icon icon-facebook"></a></li>
+                            <li><a href="#" class="social-icon icon-twitter"></a></li>
+                            <li><a href="#" class="social-icon icon-rss"></a></li>
+                            <li><a href="#" class="social-icon icon-delicious"></a></li>
+                            <li><a href="#" class="social-icon icon-linkedin"></a></li>
+                            <li><a href="#" class="social-icon icon-flickr"></a></li>
+                            <li><a href="#" class="social-icon icon-skype"></a></li>
+                            <li><a href="#" class="social-icon icon-email"></a></li>
+                        </ul>
+                    </div><!-- End .col-md-7 -->
+
+                    <div class="col-md-5 col-sm-5 col-xs-12 footer-text-container">
+                        <p>&copy; 2022 TexnoShop&trade;. Все права защищены.</p>
+                    </div><!-- End .col-md-5 -->
+                </div><!-- End .row -->
+            </div><!-- End .container -->
+        </div><!-- End #footer-bottom -->
+
+    </footer><!-- End #footer -->
+    </div><!-- End #wrapper -->
+
+    <a href="#" id="scroll-top" title="Scroll to Top"><i class="fa fa-angle-up"></i></a><!-- End #scroll-top -->
+    <!-- END -->
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/smoothscroll.js"></script>
+    <script src="~/js/jquery.debouncedresize.js"></script>
+    <script src="~/js/retina.min.js"></script>
+    <script src="~/js/jquery.placeholder.js"></script>
+    <script src="~/js/jquery.hoverIntent.min.js"></script>
+    <script src="~/js/twitter/jquery.tweet.min.js"></script>
+    <script src="~/js/jquery.flexslider-min.js"></script>
+    <script src="~/js/owl.carousel.min.js"></script>
+    <script src="~/js/jflickrfeed.min.js"></script>
+    <script src="~/js/jquery.prettyPhoto.js"></script>
+    <script src="~/js/jquery.themepunch.tools.min.js"></script>
+    <script src="~/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="~/js/main.js"></script>
+
+    <script>
+        $(function () {
+            // Slider Revolution
+            jQuery('#slider-rev').revolution({
+                delay: 8000,
+                startwidth: 1170,
+                startheight: 600,
+                onHoverStop: "true",
+                hideThumbs: 250,
+                navigationHAlign: "center",
+                navigationVAlign: "bottom",
+                navigationHOffset: 0,
+                navigationVOffset: 20,
+                soloArrowLeftHalign: "left",
+                soloArrowLeftValign: "center",
+                soloArrowLeftHOffset: 0,
+                soloArrowLeftVOffset: 0,
+                soloArrowRightHalign: "right",
+                soloArrowRightValign: "center",
+                soloArrowRightHOffset: 0,
+                soloArrowRightVOffset: 0,
+                touchenabled: "on",
+                stopAtSlide: -1,
+                stopAfterLoops: -1,
+                dottedOverlay: "none",
+                fullWidth: "on",
+                spinned: "spinner5",
+                shadow: 0,
+                hideTimerBar: "on",
+                // navigationStyle:"preview4"
+            });
+
+        });
+    </script>
+</body>
+</html>
+

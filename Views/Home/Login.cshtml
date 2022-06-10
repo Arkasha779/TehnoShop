@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+}
+ <section id="content">
+        	<div id="breadcrumb-container">
+        		<div class="container">
+					<ul class="breadcrumb">
+						<li><a asp-action="Index">Главная</a></li>
+						<li class="active">Вход</li>
+					</ul>
+        		</div>
+        	</div>
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-md-12">
+						<header class="content-title">
+							<h1 class="title">Войти или Создать аккаунт</h1>
+                            <div class="md-margin"></div><!-- space -->
+						</header>
+        			
+						   <div class="row">
+							   	
+							   	<div class="col-md-6 col-sm-6 col-xs-12">					   		
+							   		<h2>Новый покупатель</h2>
+							   		
+							   	<p>Создав учетную запись в нашем магазине, вы сможете быстрее проходить процесс оформления заказа, хранить несколько адресов доставки, просматривать и отслеживать свои заказы в своей учетной записи и многое другое.</p>
+                                <div class="md-margin"></div><!-- space -->
+							   	<a asp-action="Registeraccount" class="btn btn-custom-2">Завести аккаунт</a>
+                                <div class="lg-margin"></div><!-- space -->
+							   	</div><!-- End .col-md-6 -->
+							   	<div class="col-md-6 col-sm-6 col-xs-12">					   		
+							   		<h2>Зарегистрированные клиенты</h2>
+							   		<p>Если у вас есть учетная запись у нас, пожалуйста, войдите.</p>
+							   		<div class="xs-margin"></div>
+							   		
+									<form id="login-form" method="get" action="#">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><span class="input-icon input-icon-email"></span><span class="input-text">Email&#42;</span></span>
+                                            <input type="text" required class="form-control input-lg" placeholder="Ваш Email">
+                                        </div><!-- End .input-group -->
+                                         <div class="input-group xs-margin">
+                                            <span class="input-group-addon"><span class="input-icon input-icon-password"></span><span class="input-text">Пароль&#42;</span></span>
+                                            <input type="password" required class="form-control input-lg" placeholder="Ваш пароль">
+                                        </div><!-- End .input-group -->
+                                    <span class="help-block text-right"><a href="#">Забыли свой пароль?</a></span>
+                                    <button class="btn btn-custom-2">Войти</button>
+                                    </form>
+                                    <div class="sm-margin"></div><!-- space -->
+							   	</div><!-- End .col-md-6 -->
+							   	
+						   </div><!-- End.row -->
+								   
+        			</div><!-- End .col-md-12 -->
+        		</div><!-- End .row -->
+			</div><!-- End .container -->
+        
+        </section><!-- End #content -->

@@ -1,0 +1,147 @@
+﻿
+@{
+    ViewData["Title"] = "Registeraccount";
+}
+ <section id="content">
+        	<div id="breadcrumb-container">
+        		<div class="container">
+					<ul class="breadcrumb">
+						<li><a asp-action="Index">Главная</a> </li>
+						<li class="active">Регистрация Аккаунта</li>
+					</ul>
+        		</div>
+        	</div>
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-md-12">
+						<header class="content-title">
+							<h1 class="title">Регистрация Аккаунта</h1>
+							<p class="title-desc">Если у вас уже есть учетная запись, пожалуйста, перейдите на <a asp-action="Login">страница авторизации</a>.</p>
+						</header>
+        				<div class="xs-margin"></div><!-- space -->
+						<form action="#" id="register-form">
+        				<div class="row">
+        					
+								<div class="col-md-6 col-sm-6 col-xs-12">
+									
+									<fieldset>
+                                        <h2 class="checkout-title">Ваши персональные данные</h2>
+									<div class="input-group">
+                                        <span class="input-group-addon"><span class="input-icon input-icon-user"></span><span class="input-text">Имя&#42;</span></span>
+                                        <input type="text" required class="form-control input-lg" placeholder="Ваше имя">
+									</div><!-- End .input-group -->
+									<div class="input-group">
+                                        <span class="input-group-addon"><span class="input-icon input-icon-user"></span><span class="input-text">Фамилия&#42;</span></span>
+                                        <input type="text" required class="form-control input-lg" placeholder="Ваш последний хромой">
+									</div><!-- End .input-group -->
+									<div class="input-group">
+                                        <span class="input-group-addon"><span class="input-icon input-icon-email"></span><span class="input-text">Email&#42;</span></span>
+                                        <input type="text" required class="form-control input-lg" placeholder="Ваш Email">
+									</div><!-- End .input-group -->
+									<div class="input-group">
+                                        <span class="input-group-addon"><span class="input-icon input-icon-phone"></span><span class="input-text">Телефон&#42;</span></span>
+                                        <input type="text" required class="form-control input-lg" placeholder="Ваш телефон">
+									</div><!-- End .input-group -->
+									<div class="input-group">
+                                        <span class="input-group-addon"><span class="input-icon input-icon-fax"></span><span class="input-text">Факс</span></span>
+                                        <input type="text" class="form-control input-lg" placeholder="Ваш факс">
+									</div><!-- End .input-group -->
+									
+									</fieldset>
+									
+									<fieldset>
+									<h2 class="sub-title">ВАШ ПАРОЛЬ</h2>
+									<div class="input-group">
+                                        <span class="input-group-addon"><span class="input-icon input-icon-password"></span><span class="input-text">Пароль&#42;</span></span>
+                                        <input type="password" required class="form-control input-lg" placeholder="Ваш пароль">
+									</div><!-- End .input-group -->
+									<div class="input-group">
+                                        <span class="input-group-addon"><span class="input-icon input-icon-password"></span><span class="input-text">Пароль&#42;</span></span>
+                                        <input type="password" required class="form-control input-lg" placeholder="Ваш пароль">
+									</div><!-- End .input-group -->
+									</fieldset>
+									
+									
+								</div><!-- End .col-md-6 -->
+        						
+        						<div class="col-md-6 col-sm-6 col-xs-12">
+        						<fieldset>
+									<h2 class="sub-title">ВАШ АДРЕС</h2>
+									<div class="input-group">
+                                        <span class="input-group-addon"><span class="input-icon input-icon-company"></span><span class="input-text">Компания&#42;</span></span>
+                                        <input type="text" required class="form-control input-lg" placeholder="Ваша компания">
+									</div><!-- End .input-group -->
+									<div class="input-group">
+                                        <span class="input-group-addon"><span class="input-icon input-icon-address"></span><span class="input-text">Адрес 1&#42;</span></span>
+                                        <input type="text" class="form-control input-lg" placeholder="Ваш адрес">
+									</div><!-- End .input-group -->
+									<div class="input-group">
+                                        <span class="input-group-addon"><span class="input-icon input-icon-address"></span><span class="input-text">Адрес 2&#42;</span></span>
+                                        <input type="text" required  class="form-control input-lg" placeholder="Ваш адрес">
+									</div><!-- End .input-group -->
+									<div class="input-group">
+                                        <span class="input-group-addon"><span class="input-icon input-icon-city"></span><span class="input-text">Город&#42;</span></span>
+                                        <input type="text" required class="form-control input-lg" placeholder="Ваш город">
+									</div><!-- End .input-group -->
+									<div class="input-group">
+                                        <span class="input-group-addon"><span class="input-icon input-icon-postcode"></span><span class="input-text">Почтовый индекс&#42;</span></span>
+                                        <input type="text" required class="form-control input-lg" placeholder="Ваш почтовый индекс">
+									</div><!-- End .input-group -->
+									
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><span class="input-icon input-icon-country"></span><span class="input-text">Страна*</span></span>
+                                        <div class="large-selectbox clearfix">
+                                            <select id="country" name="country" class="selectbox">
+                                                <option  value="United Kingdom">Россия</option>
+                                                <option  value="Brazil">Белорусь</option>
+                                                <option  value="France">Франция</option>
+                                                <option  value="Italy">Италия</option>
+                                                <option  value="Spain">Германия</option>
+                                            </select>
+                                        </div><!-- End .large-selectbox-->
+                                    </div><!-- End .input-group -->
+
+									<div class="input-group">
+                                        <span class="input-group-addon"><span class="input-icon input-icon-region"></span><span class="input-text">Регион / Город&#42;</span></span>
+                                        <div class="large-selectbox clearfix">
+                                            <select id="state" name="state" class="selectbox">
+                                                <option  value="California">Москва</option>
+                                                <option  value="Texas">Минск</option>
+                                                <option  value="NewYork">Париж</option>
+                                                <option  value="Narnia">Рим</option>
+                                                <option  value="Jumanji">Берлин</option>
+                                            </select>
+                                        </div><!-- End .large-selectbox-->
+									</div><!-- End .input-group -->
+									
+									</fieldset>
+        						</div><!-- End .col-md-6 -->
+        					
+        				</div><!-- End .row -->
+						
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<fieldset class="half-margin">
+									<h2 class="sub-title">НОВОСТНАЯ РАССЫЛКА</h2>
+										<div class="input-desc-box">
+											<span class="separator icon-box">&plus;</span>Я хочу подписаться на новостную рассылку TexnoMarket.
+										</div><!-- End .input-desc -->
+									
+									<div class="input-group custom-checkbox">
+									 <input type="checkbox"> <span class="checbox-container">
+									 <i class="fa fa-check"></i>
+									 </span>
+                                     Я прочитал и согласен с <a asp-action="Privacy">политикой конфиденциальности</a>.
+									 
+									</div><!-- End .input-group -->
+								</fieldset>
+								
+								<input type="submit" value="СОЗДАЙ МОЙ АККАУНТ" class="btn btn-custom-2 md-margin">
+							</div><!-- End .col-md-6 -->
+						</div><!-- End .row -->
+        				</form>
+        			</div><!-- End .col-md-12 -->
+        		</div><!-- End .row -->
+			</div><!-- End .container -->
+        
+        </section><!-- End #content -->

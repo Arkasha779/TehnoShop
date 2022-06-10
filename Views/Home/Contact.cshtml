@@ -1,0 +1,102 @@
+﻿
+@{
+    ViewData["Title"] = "Contact";
+}
+<section id="content">
+        	<div id="breadcrumb-container">
+        		<div class="container">
+					<ul class="breadcrumb">
+						<li><a asp-action="Index">Главная</a></li>
+						<li class="active">Связаться с нами</li>
+					</ul>
+        		</div>
+        	</div>
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-md-12">
+						<header class="content-title">
+							<h1 class="title">Связаться с нами</h1>
+							<p class="title-desc">Мы рады услышать от вас. Давайте свяжемся.</p>
+						</header>
+        				<div class="xs-margin"></div><!-- space -->
+        				<div class="row">
+        					
+        					<div class="col-md-12">
+								<div id="map">
+									<!-- Google - Map - Api -->	
+								</div><!-- End #map -->
+        					</div><!-- End .col-md-12 -->
+							
+        					<div class="col-md-8 col-sm-8 col-xs-12">
+        						<h2 class="sub-title">ОСТАВЬТЕ КОММЕНТАРИЙ</h2>
+        						<div class="row">
+        							<form action="#" id="contact-form">
+        								<div class="col-md-6 col-sm-12 col-xs-12">
+											<div class="input-group">
+												<span class="input-group-addon"><span class="input-icon input-icon-user"></span><span class="input-text">Имя&#42;</span></span>
+												<input type="text" name="contact-name" id="contact-name" required class="form-control input-lg" placeholder="Ваше имя">
+											</div><!-- End .input-group -->
+        									<div class="input-group">
+												<span class="input-group-addon"><span class="input-icon input-icon-email"></span><span class="input-text">Email&#42;</span></span>
+												<input type="email" name="contact-email" id="contact-email" required class="form-control input-lg" placeholder="Ваш Email">
+											</div><!-- End .input-group -->
+        									<div class="input-group">
+												<span class="input-group-addon"><span class="input-icon input-icon-subject"></span><span class="input-text">Предмет&#42;</span></span>
+												<input type="text" name="contact-subject" id="contact-subject" required class="form-control input-lg" placeholder="Предмет">
+											</div><!-- End .input-group -->
+        									<p class="item-desc">Ваш электронный адрес не будет опубликован. Необходимые 
+поля отмечены *</p>
+        								</div><!-- End .col-md-6 -->
+        								
+        								<div class="col-md-6 col-sm-12 col-xs-12">
+											<div class="input-group textarea-container">
+												<span class="input-group-addon"><span class="input-icon input-icon-message"></span><span class="input-text">Ваш комментарий</span></span>
+												<textarea name="contact-message" id="contact-message" class="form-control" cols="30" rows="6" placeholder="Ваше сообщение"></textarea>
+											</div><!-- End .input-group -->
+        								<input type="submit" value="РАЗМЕСТИТЬ" class="btn btn-custom-2 md-margin">
+        								</div><!-- End .col-md-6 -->
+        							</form>
+        						</div><!-- End .row -->
+        						
+        					</div><!-- End .col-md-8 -->
+        					
+        					<div class="col-md-4 col-sm-4 col-xs-12">
+        						<h2 class="sub-title">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+        						<ul class="contact-details-list">
+        							<li>
+										<span class="contact-icon contact-icon-phone"></span>
+										<ul>
+											<li>063 073 4450</li>
+											<li>520-918-4447</li>
+										</ul>
+        							</li>
+        							<li>
+										<span class="contact-icon contact-icon-mobile"></span>
+										<ul>
+											<li>+33 8 03 75 16 07</li>
+											<li>+49(0)6826808849</li>
+										</ul>
+        							</li>
+        							<li>
+										<span class="contact-icon contact-icon-email"></span>
+										<ul>
+											<li>TS_sup@gmail.com</li>
+											<li>TS_sup@inbox.com</li>
+										</ul>
+        							</li>
+        							<li>
+										<span class="contact-icon contact-icon-skype"></span>
+										<ul>
+											<li>TS_store</li>
+											<li>TS_support</li>
+										</ul>
+        							</li>
+        						</ul>
+        					</div><!-- End .col-md-4 -->
+        				</div><!-- End .row -->
+        				
+        			</div><!-- End .col-md-12 -->
+        		</div><!-- End .row -->
+			</div><!-- End .container -->
+        
+        </section><!-- End #content -->

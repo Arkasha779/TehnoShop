@@ -1,0 +1,364 @@
+﻿
+@{
+    ViewData["Title"] = "Checkout";
+}
+<section id="content">
+        	<div id="breadcrumb-container">
+        		<div class="container">
+					<ul class="breadcrumb">
+						<li><a asp-action="Index">Главная</a></li>
+						<li class="active">Проверка</li>
+					</ul>
+        		</div>
+        	</div>
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-md-12">
+						<header class="content-title">
+							<h1 class="title">Проверка</h1>
+							<p class="title-desc">Курс на социально-ориентированный национальный проект развеял последние сомнения.</p>
+						</header>
+        				<div class="xs-margin"></div><!-- space -->
+        				<form action="#" id="checkout-form">
+        				<div class="panel-group custom-accordion" id="checkout">
+							<div class="panel">
+								<div class="accordion-header">
+									<div class="accordion-title">1 Этап: <span>Вариант оформления заказа</span></div><!-- End .accordion-title -->
+									<a class="accordion-btn opened"  data-toggle="collapse" data-target="#checkout-option"></a>
+								</div><!-- End .accordion-header -->
+								
+								<div id="checkout-option" class="collapse in">
+								  <div class="panel-body">
+								   <div class="row">
+								   	
+								   	<div class="col-md-6 col-sm-6 col-xs-12">					   		
+								   		<h2 class="checkout-title">Новый покупатель</h2>
+								   		<p>Зарегистрируйтесь у нас для удобства в будущем:</p>
+								   		<div class="xs-margin"></div>
+								   		<div class="input-group custom-checkbox sm-margin">
+											 <input type="checkbox"> <span class="checbox-container">
+											 	<i class="fa fa-check"></i>
+											 </span>
+											 Оформить заказ как гость
+										 
+										</div><!-- End .input-group -->
+								   		<div class="input-group custom-checkbox sm-margin">
+											 <input type="checkbox"> <span class="checbox-container">
+											 	<i class="fa fa-check"></i>
+											 </span>
+											 Зарегистраться
+										 
+										</div><!-- End .input-group -->
+								   	<p>Создав учетную запись в нашем магазине, вы сможете быстрее проходить процесс оформления заказа, хранить несколько адресов доставки, просматривать и отслеживать свои заказы в своей учетной записи и многое другое..</p>
+									<div class="md-margin"></div>
+								   	
+								   	</div><!-- End .col-md-6 -->
+								   
+								   	<div class="col-md-6 col-sm-6 col-xs-12">					   		
+								   		<h2 class="checkout-title">Зарегистрированные клиенты</h2>
+								   		<p>Если у вас есть учетная запись у нас, пожалуйста, войдите.</p>
+								   		<div class="xs-margin"></div>
+								   		
+										<div class="input-group">
+											<span class="input-group-addon"><span class="input-icon input-icon-email"></span><span class="input-text">Email&#42;</span></span>
+											<input type="text" required class="form-control input-lg" placeholder="Ваш Email">
+										</div><!-- End .input-group -->
+										<div class="input-group xs-margin">
+											<span class="input-group-addon"><span class="input-icon input-icon-password"></span><span class="input-text">Пароль&#42;</span></span>
+											<input type="text" required class="form-control input-lg" placeholder="Ваш Пароль">
+										</div><!-- End .input-group -->
+								   		<span class="help-block text-right"><a href="#">Забыли свой пароль?</a></span>
+								   		<div class="input-group custom-checkbox sm-margin top-10px">
+											 <input type="checkbox"> <span class="checbox-container">
+											 	<i class="fa fa-check"></i>
+											 </span>
+											 Запомнить мой пароль
+										 
+										</div><!-- End .input-group -->
+								   	</div><!-- End .col-md-6 -->
+								   	
+								   </div><!-- End.row -->
+								   
+								   <a href="#" class="btn btn-custom-2">ПРОДОЛЖАТЬ</a>
+								  </div><!-- End .panel-body -->
+								</div><!-- End .panel-collapse -->
+							  
+							  </div><!-- End .panel -->
+							  
+							  <div class="panel">
+								<div class="accordion-header">
+									<div class="accordion-title">2 Этап: <span>Платежная информация</span></div><!-- End .accordion-title -->
+									<a class="accordion-btn"  data-toggle="collapse" data-target="#billing"></a>
+								</div><!-- End .accordion-header -->
+								
+								<div id="billing" class="collapse">
+								  <div class="panel-body">
+								   <div class="row">
+								   	<div class="col-md-6 col-sm-6 col-xs-12">
+								   		
+								   		<h2 class="checkout-title">Ваши персональные данные</h2>
+								   		<div class="input-group">
+										<span class="input-group-addon"><span class="input-icon input-icon-user"></span><span class="input-text">Имя&#42;</span></span>
+										<input type="text" required class="form-control input-lg" placeholder="Ваше имя">
+									</div><!-- End .input-group -->
+									<div class="input-group">
+										<span class="input-group-addon"><span class="input-icon input-icon-user"></span><span class="input-text">Фамилия&#42;</span></span>
+										<input type="text" required class="form-control input-lg" placeholder="Ваш последний хромой">
+									</div><!-- End .input-group -->
+									<div class="input-group">
+										<span class="input-group-addon"><span class="input-icon input-icon-email"></span><span class="input-text">Email&#42;</span></span>
+										<input type="text" required class="form-control input-lg" placeholder="Ваш Email">
+									</div><!-- End .input-group -->
+									<div class="input-group">
+										<span class="input-group-addon"><span class="input-icon input-icon-phone"></span><span class="input-text">Телефон&#42;</span></span>
+										<input type="text" required class="form-control input-lg" placeholder="Ваш телефон">
+									</div><!-- End .input-group -->
+									<div class="input-group">
+										<span class="input-group-addon"><span class="input-icon input-icon-fax"></span><span class="input-text">Факс</span></span>
+										<input type="text" class="form-control input-lg" placeholder="Ваш факс">
+									</div><!-- End .input-group -->
+								   	<div class="input-group xlg-margin">
+										<span class="input-group-addon"><span class="input-icon input-icon-company"></span><span class="input-text">Компания&#42;</span></span>
+										<input type="text" required class="form-control input-lg" placeholder="Ваша компания">
+									</div><!-- End .input-group -->
+								   	
+								   	<div class="input-group">
+										<span class="input-group-addon"><span class="input-icon input-icon-password"></span><span class="input-text">Пароль&#42;</span></span>
+										<input type="password" required class="form-control input-lg" placeholder="Ваш пароль">
+									</div><!-- End .input-group -->
+									<div class="input-group xlg-margin">
+										<span class="input-group-addon"><span class="input-icon input-icon-password"></span><span class="input-text">Пароль&#42;</span></span>
+										<input type="password" required class="form-control input-lg" placeholder="Ваш пароль">
+									</div><!-- End .input-group -->
+								   	
+								   	<div class="input-group custom-checkbox sm-margin">
+											 <input type="checkbox"> <span class="checbox-container">
+											 	<i class="fa fa-check"></i>
+											 </span>
+											 Я хочу подписаться на информационный бюллетень TexnoMarket.
+										 
+									</div><!-- End .input-group -->
+								   	
+								   	<div class="input-group custom-checkbox sm-margin">
+											 <input type="checkbox"> <span class="checbox-container">
+											 	<i class="fa fa-check"></i>
+											 </span>
+											 Мои адреса доставки и выставления счета совпадают.
+										 
+									</div><!-- End .input-group -->
+								   	
+								   	</div><!-- End .col-md-6 -->
+								   	
+								   	<div class="col-md-6 col-sm-6 col-xs-12">
+									<h2 class="checkout-title">Ваш адрес</h2>
+									
+									<div class="input-group">
+										<span class="input-group-addon"><span class="input-icon input-icon-address"></span><span class="input-text">Адрес 1&#42;</span></span>
+										<input type="text" class="form-control input-lg" placeholder="Ваш адрес">
+									</div><!-- End .input-group -->
+									<div class="input-group">
+										<span class="input-group-addon"><span class="input-icon input-icon-address"></span><span class="input-text">Адрес 2&#42;</span></span>
+										<input type="text" required  class="form-control input-lg" placeholder="Ваш адрес">
+									</div><!-- End .input-group -->
+									<div class="input-group">
+										<span class="input-group-addon"><span class="input-icon input-icon-city"></span><span class="input-text">Город&#42;</span></span>
+										<input type="text" required class="form-control input-lg" placeholder="Ваш город">
+									</div><!-- End .input-group -->
+									<div class="input-group">
+										<span class="input-group-addon"><span class="input-icon input-icon-postcode"></span><span class="input-text">Почтовый индекс&#42;</span></span>
+										<input type="text" required class="form-control input-lg" placeholder="Ваш почтовый индекс">
+									</div><!-- End .input-group -->
+									<div class="input-group">
+                                        <span class="input-group-addon"><span class="input-icon input-icon-country"></span><span class="input-text">Страна*</span></span>
+                                        <div class="large-selectbox clearfix">
+                                            <select id="country" name="country" class="selectbox">
+                                                <option  value="United Kingdom">Россия</option>
+                                                <option  value="Brazil">Белорусь</option>
+                                                <option  value="France">Франция</option>
+                                                <option  value="Italy">Италия</option>
+                                                <option  value="Spain">Германия</option>
+                                            </select>
+                                        </div><!-- End .large-selectbox-->
+                                    </div><!-- End .input-group -->
+
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><span class="input-icon input-icon-region"></span><span class="input-text">Регион / Город&#42;</span></span>
+                                        <div class="large-selectbox clearfix">
+                                            <select id="state" name="state" class="selectbox">
+                                                <option  value="California">Москва</option>
+                                                <option  value="Texas">Минск</option>
+                                                <option  value="NewYork">Париж</option>
+                                                <option  value="Narnia">Рим</option>
+                                                <option  value="Jumanji">Берлин</option>
+                                            </select>
+                                        </div><!-- End .large-selectbox-->
+                                    </div><!-- End .input-group -->
+								   	<div class="input-group custom-checkbox md-margin">
+											 <input type="checkbox"> <span class="checbox-container">
+											 	<i class="fa fa-check"></i>
+											 </span>
+                                             Я прочитал и согласен с <a asp-action="Privacy">политикой конфиденциальности</a>.
+										 
+									</div><!-- End .input-group -->
+								   	<a href="#" class="btn btn-custom-2">ПРОДОЛЖАТЬ</a>
+								   	</div><!-- End .col-md-6 -->
+								   	
+								   </div><!-- End .row -->
+								  </div><!-- End .panel-body -->
+								</div><!-- End .panel-collapse -->
+							  
+							  </div><!-- End .panel -->
+							  
+							  <div class="panel">
+								<div class="accordion-header">
+									<div class="accordion-title">3 Этап: <span>Подробности доставки</span></div><!-- End .accordion-title -->
+									<a class="accordion-btn"  data-toggle="collapse" data-target="#delivery-details"></a>
+								</div><!-- End .accordion-header -->
+								
+								<div id="delivery-details" class="collapse">
+								  <div class="panel-body">
+								   <p>Подробно о доставке</p>
+								  </div><!-- End .panel-body -->
+								</div><!-- End .panel-collapse -->
+							  
+							  </div><!-- End .panel -->
+							  
+							  
+							  <div class="panel">
+								<div class="accordion-header">
+									<div class="accordion-title">4 Этап: <span>Способ доставки</span></div><!-- End .accordion-title -->
+									<a class="accordion-btn"  data-toggle="collapse" data-target="#delivery-method"></a>
+								</div><!-- End .accordion-header -->
+								
+								<div id="delivery-method" class="collapse">
+								  <div class="panel-body">
+								  <p>Выберите способ доставки.</p>
+								  </div><!-- End .panel-body -->
+								</div><!-- End .panel-collapse -->
+							  
+							  </div><!-- End .panel -->
+        				
+							<div class="panel">
+								<div class="accordion-header">
+									<div class="accordion-title">5 Этап: <span>Метод оплаты</span></div><!-- End .accordion-title -->
+									<a class="accordion-btn"  data-toggle="collapse" data-target="#payment-method"></a>
+								</div><!-- End .accordion-header -->
+								
+								<div id="payment-method" class="collapse">
+								  <div class="panel-body">
+								  <p>Выберите метод оплаты.</p>
+								  </div><!-- End .panel-body -->
+								</div><!-- End .panel-collapse -->
+							  
+						  	</div><!-- End .panel -->
+        					
+        					<div class="panel">
+								<div class="accordion-header">
+									<div class="accordion-title">6 Step: <span>Confirm Order</span></div><!-- End .accordion-title -->
+									<a class="accordion-btn opened"  data-toggle="collapse" data-target="#confirm"></a>
+								</div><!-- End .accordion-header -->
+								
+								<div id="confirm" class="collapse in">
+								  <div class="panel-body">
+							  
+								<div class="table-responsive">
+									<table class="table checkout-table">
+									<thead>
+										<tr>
+											<th class="table-title">Наименование товара</th>
+											<th class="table-title">Код продукта</th>
+											<th class="table-title">Цена за единицу товара</th>
+											<th class="table-title">Количество</th>
+											<th class="table-title">Промежуточный итог</th>
+										</tr>
+									</thead>
+									
+									<tbody>
+										<tr>
+										<td class="item-name-col">
+											<figure>
+												<a href="#"><img src="~/images/products/compare1.jpg" alt="Lowlands Lace Blouse"></a>
+											</figure>
+											<header class="item-name"><a href="#">PowerColor AMD Radeon 550 LP</a></header>
+											<ul>
+												<li>Color: White</li>
+											</ul>
+										</td>
+										<td class="item-code">MP125984154</td>
+										<td class="item-price-col"><span class="item-price-special">₽10299</span></td>
+										<td>
+											<div class="custom-quantity-input">
+												<input type="text" name="quantity" value="1">
+												<a href="#" onclick="return false;" class="quantity-btn quantity-input-up"><i class="fa fa-angle-up"></i></a>
+												<a href="#" onclick="return false;" class="quantity-btn quantity-input-down"><i class="fa fa-angle-down"></i></a>
+											</div>
+										</td>
+										<td class="item-total-col"><span class="item-price-special">₽10299</span>
+										<a href="#" class="close-button"></a>
+										</td>
+									</tr>
+									<tr>
+										<td class="item-name-col">
+											<figure>
+												<a href="#"><img src="~/images/products/compare2.jpg" alt="Samsung Galaxy Ace"></a>
+											</figure>
+											<header class="item-name"><a href="#">Samsung Galaxy Ace</a></header>
+											<ul>
+												<li>Color: Black</li>
+											</ul>
+										</td>
+										<td class="item-code">MP125984154</td>
+										<td class="item-price-col"><span class="item-price-special">₽1475</span></td>
+										<td>
+											<div class="custom-quantity-input">
+												<input type="text" name="quantity" value="1">
+												<a href="#" onclick="return false;" class="quantity-btn quantity-input-up"><i class="fa fa-angle-up"></i></a>
+												<a href="#" onclick="return false;" class="quantity-btn quantity-input-down"><i class="fa fa-angle-down"></i></a>
+											</div>
+										</td>
+										<td class="item-total-col"><span class="item-price-special">₽1475</span>
+										<a href="#" class="close-button"></a>
+										</td>
+									</tr>
+									
+										<tr>
+											<td class="checkout-table-title" colspan="4">Промежуточный итог:</td>
+											<td class="checkout-table-price">₽11774.00</td>
+										</tr>
+										<tr>
+
+											<td class="checkout-table-title" colspan="4">Доставка:</td>
+											<td class="checkout-table-price">₽60.00</td>
+										</tr>
+										<tr>
+
+											<td class="checkout-table-title" colspan="4">Налог (0%):</td>
+											<td class="checkout-table-price">₽0.00</td>
+										</tr>
+										
+									</tbody>
+									 <tfoot>
+										<tr>
+											<td class="checkout-total-title" colspan="4"><strong>Итого:</strong></td>
+											<td class="checkout-total-price cart-total"><strong>₽11834.00</strong></td>
+										</tr>
+									</tfoot>
+								  </table>
+								
+								</div><!-- End .table-reponsive -->
+								  <div class="lg-margin"></div><!-- space -->
+								  <div class="text-right">
+								  	<input type="submit" class="btn btn-custom-2" value="ПОДТВЕРДИТЬ ЗАКАЗ">
+								  </div>
+								  </div><!-- End .panel-body -->
+								</div><!-- End .panel-collapse -->
+							  
+						  	</div><!-- End .panel -->
+        				</div><!-- End .panel-group #checkout -->
+        				</form>
+        				<div class="xlg-margin"></div><!-- space -->
+        			</div><!-- End .col-md-12 -->
+        		</div><!-- End .row -->
+			</div><!-- End .container -->
+        
+        </section><!-- End #content -->

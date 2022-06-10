@@ -1,0 +1,25 @@
+﻿@model ErrorViewModel
+@{
+    ViewData["Title"] = "Error";
+}
+
+<section id="content" class="no-content">
+        	<div class="lg-margin"></div><!-- Space -->
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-md-12">
+        				<div class="no-content-comment">
+                            <h2>404</h2>
+                            <h3>Это не моя вина дружище! <br> Я думаю ты заблудился.</h3>
+                        </div><!-- End .no-content-comment -->
+        			</div><!-- End .col-md-12 -->
+        		</div><!-- End .row -->
+			</div><!-- End .container -->
+        </section><!-- End #content -->
+
+@if (Model.ShowRequestId)
+{
+    <p>
+        <strong>Request ID:</strong> <code>@Model.RequestId</code>
+    </p>
+}

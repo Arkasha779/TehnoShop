@@ -1,0 +1,524 @@
+﻿
+@{
+    ViewData["Title"] = "Product";
+}
+<section id="content">
+        	<div id="breadcrumb-container">
+        		<div class="container">
+					<ul class="breadcrumb">
+						<li><a asp-action="Index">Главная</a></li>
+						<li class="active">Продукт</li>
+					</ul>
+        		</div>
+        	</div>
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-md-12">
+        				
+        				<div class="row">
+        				
+        				<div class="col-md-6 col-sm-12 col-xs-12 product-viewer clearfix">
+
+        					<div id="product-image-carousel-container">
+        						<ul id="product-carousel" class="celastislide-list">
+	        						<li class="active-slide"><a data-rel='prettyPhoto[product]' href="images/products/big-item1.jpg" data-image="images/products/big-item1.jpg" data-zoom-image="images/products/big-item1.jpg" class="product-gallery-item"><img src="~/images/products/thumbnails/item10.jpg" alt="Phone photo 1"></a></li>
+	        						<li><a data-rel='prettyPhoto[product]' href="images/products/big-item2.jpg" data-image="images/products/big-item2.jpg" data-zoom-image="images/products/big-item2.jpg" class="product-gallery-item"><img src="~/images/products/thumbnails/item11.jpg" alt="Phone photo 2"></a></li>
+	        						<li><a data-rel='prettyPhoto[product]' href="images/products/big-item3.jpg" data-image="images/products/big-item3.jpg" data-zoom-image="images/products/big-item3.jpg" class="product-gallery-item"><img src="~/images/products/thumbnails/item12.jpg" alt="Phone photo 3"></a></li>
+	        						<li><a data-rel='prettyPhoto[product]' href="images/products/big-item4.jpg" data-image="images/products/big-item4.jpg" data-zoom-image="images/products/big-item4.jpg" class="product-gallery-item"><img src="~/images/products/thumbnails/item13.jpg" alt="Phone photo 4"></a></li>
+	        						<li><a data-rel='prettyPhoto[product]' href="images/products/big-item5.jpg" data-image="images/products/big-item5.jpg" data-zoom-image="images/products/big-item5.jpg" class="product-gallery-item"><img src="~/images/products/thumbnails/item14.jpg" alt="Phone photo 4"></a></li>
+
+        					</ul><!-- End product-carousel -->
+        					</div>
+
+        					<div id="product-image-container">
+        						<figure><img src="~/images/products/big-item1.jpg" data-zoom-image="images/products/big-item1.jpg" alt="Product Big image" id="product-image">
+        							<figcaption class="item-price-container">
+										<span class="old-price">₽1600</span>
+										<span class="item-price">₽1200</span>
+									</figcaption>
+        						</figure>
+        					</div><!-- product-image-container -->        				 
+        				</div><!-- End .col-md-6 -->
+
+        				<div class="col-md-6 col-sm-12 col-xs-12 product">
+                        <div class="lg-margin visible-sm visible-xs"></div><!-- Space -->
+        					<h1 class="product-name">Samsun Galaxy Ace</h1>
+        					<div class="ratings-container">
+								<div class="ratings separator">
+									<div class="ratings-result" data-result="70"></div>
+								</div><!-- End .ratings -->
+								<span class="ratings-amount separator">
+									3 Отзыв(а/ов)
+								</span>
+								<span class="separator">|</span>
+								<a href="#review" class="rate-this">Добавьте свой отзыв</a>
+							</div><!-- End .rating-container -->
+        				<ul class="product-list">
+        					<li><span>Доступность:</span>В наличии</li>
+        					<li><span>Код продукта:</span>483512569</li>
+        					<li><span>Бренд:</span>Samsung</li>
+        				</ul>
+        				<hr>
+                        <div class="product-color-filter-container">
+                            <span>Выберите цвет:</span>
+                            <div class="xs-margin"></div>
+                            <ul class="filter-color-list clearfix">
+                                <li><a href="#" data-bgcolor="#fff" class="filter-color-box"></a></li>
+                                <li><a href="#" data-bgcolor="#d1d2d4" class="filter-color-box"></a></li>
+                                <li><a href="#" data-bgcolor="#666467" class="filter-color-box"></a></li>
+                                <li><a href="#" data-bgcolor="#515151" class="filter-color-box"></a></li>
+                                <li><a href="#" data-bgcolor="#bcdae6" class="filter-color-box"></a></li>
+                                <li><a href="#" data-bgcolor="#5272b3" class="filter-color-box"></a></li>
+                                <li><a href="#" data-bgcolor="#acbf0b" class="filter-color-box"></a></li>
+                            </ul>
+                        </div><!-- End .product-color-filter-container-->
+                        <hr>
+							<div class="product-add clearfix">
+								<div class="custom-quantity-input">
+									<input type="text" name="quantity" value="1">
+									<a href="#" onclick="return false;" class="quantity-btn quantity-input-up"><i class="fa fa-angle-up"></i></a>
+									<a href="#" onclick="return false;" class="quantity-btn quantity-input-down"><i class="fa fa-angle-down"></i></a>
+								</div>
+								<button class="btn btn-custom-2">Добавить в корзину</button>
+							</div><!-- .product-add -->
+        					<div class="md-margin"></div><!-- Space -->
+        					<div class="product-extra clearfix">
+								<div class="product-extra-box-container clearfix">
+									<div class="item-action-inner">
+										<a href="#" class="icon-button icon-like">Избранное</a>
+										<a href="#" class="icon-button icon-compare">Проверка</a>
+									</div><!-- End .item-action-inner -->
+								</div>
+								<div class="md-margin visible-xs"></div>
+								<div class="share-button-group">
+									<!-- AddThis Button BEGIN -->
+									<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+									<a class="addthis_button_facebook"></a>
+									<a class="addthis_button_twitter"></a>
+									<a class="addthis_button_email"></a>
+									<a class="addthis_button_print"></a>
+									<a class="addthis_button_compact"></a><a class="addthis_counter addthis_bubble_style"></a>
+									</div>
+									<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+									<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52b2197865ea0183"></script>
+									<!-- AddThis Button END -->
+								</div><!-- End .share-button-group -->
+        					</div>
+        				</div><!-- End .col-md-6 -->
+        					
+        					
+        				</div><!-- End .row -->
+        				
+        				<div class="lg-margin2x"></div><!-- End .space -->
+        				
+        				<div class="row">
+        					<div class="col-md-9 col-sm-12 col-xs-12">
+        						
+        						<div class="tab-container left product-detail-tab clearfix">
+        								<ul class="nav-tabs">
+										  <li class="active"><a href="#overview" data-toggle="tab">Обзор</a></li>
+										  <li><a href="#description" data-toggle="tab">Описание</a></li>
+										  <li><a href="#review" data-toggle="tab">Отзыв</a></li>
+										  <li><a href="#additional" data-toggle="tab">Дополнительная информация</a></li>
+										  <li><a href="#video" data-toggle="tab">Видео</a></li>
+										</ul>
+        								<div class="tab-content clearfix">
+        									
+        									<div class="tab-pane active" id="overview">
+        										<p>Принимая во внимание показатели успешности, новая модель организационной деятельности требует анализа анализа существующих паттернов поведения.</p>
+        										<p>Следует отметить, что постоянное информационно-пропагандистское обеспечение нашей деятельности требует анализа модели развития.</p>
+        										<p>Приятно, граждане, наблюдать, как ключевые особенности структуры проекта являются только методом политического участия и рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок.</p>
+        										<p>Разнообразный и богатый опыт говорит нам, что глубокий уровень погружения не оставляет шанса для форм воздействия.</p>
+        										<p>Безусловно, реализация намеченных плановых заданий создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса своевременного выполнения сверхзадачи.</p>
+        									</div><!-- End .tab-pane -->
+        									
+        									<div class="tab-pane" id="description">
+												<p>Идеальное сочетание портативности и производительности в тонком форм-факторе 1 дюйм:</p>
+        										<ul class="product-details-list">
+        											<li>Доступен четырехъядерный процессор Intel® Core™ i7 3-го поколения;</li>
+        											<li>Доступна Windows 8 Pro;</li>
+        											<li>Доступны размеры экрана 13,3 и 15,5 дюймов;</li>
+        											<li>Удвойте время автономной работы с доступной листовой батареей;</li>
+        											<li>Доступен процессор Intel® Core™ i7 4-го поколения;</li>
+        											<li>Сенсорный экран Full HD TRILUMINOS IPS (1920 x 1080);</li>
+        											<li>Доступен сверхбыстрый твердотельный накопитель PCIe емкостью 512 ГБ;</li>
+        											<li>Сверхлегкий всего 1.06 кг.</li>
+        											<li>И больше...</li>
+        										</ul>
+        									</div><!-- End .tab-pane -->
+        									
+        									<div class="tab-pane" id="review">
+        										
+        										<p>С другой стороны, дальнейшее развитие различных форм деятельности позволяет выполнить важные задания по разработке распределения внутренних резервов и ресурсов.</p>
+        										<p>Сложно сказать, почему реплицированные с зарубежных источников, современные исследования представлены в исключительно положительном свете.</p>
+        									</div><!-- End .tab-pane -->
+        									
+        									<div class="tab-pane" id="additional">
+        										<strong>Дополнительная информация</strong>
+        										<p>Средства индивидуальной защиты оказались бесполезны</p>
+        										<hr>
+        										<ul class="product-details-list">
+        											<li>Экономическая повестка сегодняшнего дня показала себя во всей красе!</li>
+        											<li>Подтверждено: сознание наших соотечественников не замутнено пропагандой</li>
+        											<li>Только чистый разум не скован границами</li>
+        											<li>Сложно сказать, почему объемы выросли</li>
+        											<li>Давайте разбираться: склады ломятся от зерна</li>
+        											<li>Неподкупность государственных СМИ станет частью наших традиций</li>
+        										</ul>
+        									</div><!-- End .tab-pane -->
+        									
+        									<div class="tab-pane" id="video">
+        										<div class="video-container">
+        											<strong>Видео о продукте</strong>
+        											<p>Все чаще появляется информация о том, что базовый вектор развития не позволил союзу развалиться</p>
+        											<hr>
+        											<iframe width="560" height="315" src="//www.youtube.com/embed/Z0MNVFtyO30?rel=0"></iframe>
+        											
+        										</div><!-- End .video-container -->
+        										
+        									</div><!-- End .tab-pane -->
+        								</div><!-- End .tab-content -->
+        						</div><!-- End .tab-container -->
+        						<div class="lg-margin visible-xs"></div>
+        					</div><!-- End .col-md-9 -->
+        					<div class="lg-margin2x visible-sm visible-xs"></div><!-- Space -->
+        					<div class="col-md-3 col-sm-12 col-xs-12 sidebar">
+        						<div class="widget featured">
+        							<h3>Похожие</h3>
+        							
+        							<div class="featured-slider flexslider sidebarslider">
+        								<ul class="featured-list clearfix">
+        									<li>
+        										<div class="featured-product clearfix">
+        											<figure>
+        												<img src="~/images/products/thumbnails/item5.jpg" alt="item5">
+        											</figure>
+        											<h5><a href="#">Блок питания AeroCool VX PLUS 500W</a></h5>
+        											<div class="ratings-container">
+														<div class="ratings">
+															<div class="ratings-result" data-result="84"></div>
+														</div><!-- End .ratings -->
+													</div><!-- End .rating-container -->
+        											<div class="featured-price">₽1999</div><!-- End .featured-price -->
+        										</div><!-- End .featured-product -->
+        										
+        										<div class="featured-product clearfix">
+        											<figure>
+        												<img src="~/images/products/thumbnails/item1.jpg" alt="item1">
+        											</figure>
+        											<h5><a href="#">Кулер для процессора DEEPCOOL GAMMAXX 300</a></h5>
+        											<div class="ratings-container">
+														<div class="ratings">
+															<div class="ratings-result" data-result="84"></div>
+														</div><!-- End .ratings -->
+													</div><!-- End .rating-container -->
+        											<div class="featured-price">₽1399</div><!-- End .featured-price -->
+        										</div><!-- End .featured-product -->
+        										
+        										<div class="featured-product clearfix">
+        											<figure>
+        												<img src="~/images/products/thumbnails/item2.jpg" alt="item2">
+        											</figure>
+        											<h5><a href="#">Материнская плата GIGABYTE H410M H V3</a></h5>
+        											<div class="ratings-container">
+														<div class="ratings">
+															<div class="ratings-result" data-result="84"></div>
+														</div><!-- End .ratings -->
+													</div><!-- End .rating-container -->
+        											<div class="featured-price">₽4699</div><!-- End .featured-price -->
+        										</div><!-- End .featured-product -->
+        									</li>
+        									<li>
+        										<div class="featured-product clearfix">
+        											<figure>
+                                                        <img src="~/images/products/thumbnails/item3.jpg" alt="item3">
+                                                    </figure>
+        											<h5><a href="#">Швейцарский мобильный телефон</a></h5>
+        											<div class="ratings-container">
+														<div class="ratings">
+															<div class="ratings-result" data-result="64"></div>
+														</div><!-- End .ratings -->
+													</div><!-- End .rating-container -->
+        											<div class="featured-price">₽39</div><!-- End .featured-price -->
+        										</div><!-- End .featured-product -->
+        										
+        										<div class="featured-product clearfix">
+        											<figure>
+        												<img src="~/images/products/thumbnails/item4.jpg" alt="item4">
+        											</figure>
+        											<h5><a href="#">Наушники Zwinzed</a></h5>
+        											<div class="ratings-container">
+														<div class="ratings">
+															<div class="ratings-result" data-result="94"></div>
+														</div><!-- End .ratings -->
+													</div><!-- End .rating-container -->
+        											<div class="featured-price">₽18.99</div><!-- End .featured-price -->
+        										</div><!-- End .featured-product -->
+        										
+        										<div class="featured-product clearfix">
+        											<figure>
+        												<img src="~/images/products/thumbnails/item7.jpg" alt="item7">
+        											</figure>
+        											<h5><a href="#">1 ТБ Жесткий диск Seagate BarraCuda</a></h5>
+        											<div class="ratings-container">
+														<div class="ratings">
+															<div class="ratings-result" data-result="74"></div>
+														</div><!-- End .ratings -->
+													</div><!-- End .rating-container -->
+        											<div class="featured-price">₽4199</div><!-- End .featured-price -->
+        										</div><!-- End .featured-product -->
+        									</li>
+        									<li>
+        										
+        										<div class="featured-product clearfix">
+        											<figure>
+                                                        <img src="~/images/products/thumbnails/item4.jpg" alt="item4">
+                                                    </figure>
+        											<h5><a href="#">Кулер для процессора DEEPCOOL GAMMAXX 400 V2</a></h5>
+        											<div class="ratings-container">
+														<div class="ratings">
+															<div class="ratings-result" data-result="84"></div>
+														</div><!-- End .ratings -->
+													</div><!-- End .rating-container -->
+        											<div class="featured-price">₽1799</div><!-- End .featured-price -->
+        										</div><!-- End .featured-product -->
+        										
+        										<div class="featured-product clearfix">
+        											<figure>
+        												<img src="~/images/products/thumbnails/item6.jpg" alt="item6">
+        											</figure>
+        											<h5><a href="#">Материнская плата GIGABYTE H410M S2 V3</a></h5>
+        											<div class="ratings-container">
+														<div class="ratings">
+															<div class="ratings-result" data-result="84"></div>
+														</div><!-- End .ratings -->
+													</div><!-- End .rating-container -->
+        											<div class="featured-price">₽4499</div><!-- End .featured-price -->
+        										</div><!-- End .featured-product -->
+        									</li>
+        								</ul>
+        							</div><!-- End .featured-slider -->
+        						</div><!-- End .widget -->
+        						
+        					</div><!-- End .col-md-4 -->
+        				</div><!-- End .row -->
+        				<div class="lg-margin2x"></div><!-- Space -->
+        				<div class="purchased-items-container carousel-wrapper">
+                            <header class="content-title">
+                                <div class="title-bg">
+                                    <h2 class="title">Также в продаже</h2>
+                                </div><!-- End .title-bg -->
+                                <p class="title-desc">Обратите внимание на похожие товары — при покупке на сумму более 500 ₽ можно получить скидку.</p>
+                            </header>
+                            
+                                <div class="carousel-controls">
+                                    <div id="purchased-items-slider-prev" class="carousel-btn carousel-btn-prev"></div><!-- End .carousel-prev -->
+                                    <div id="purchased-items-slider-next" class="carousel-btn carousel-btn-next carousel-space"></div><!-- End .carousel-next -->
+                                </div><!-- End .carousel-controllers -->
+                                <div class="purchased-items-slider owl-carousel">
+                                    <div class="item item-hover">
+                                        <div class="item-image-wrapper">
+                                            <figure class="item-image-container">
+                                                <a asp-action="Product">
+                                                    <img src="~/images/products/item7.jpg" alt="item1" class="item-image">
+                                                    <img src="~/images/products/item7-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                </a>
+                                            </figure>
+                                            <div class="item-price-container">
+                                                <span class="item-price">₽160<span class="sub-price">.99</span></span>
+                                            </div><!-- End .item-price-container -->
+                                            <span class="new-rect">Новинка</span>
+                                        </div><!-- End .item-image-wrapper -->
+                                        <div class="item-meta-container">
+                                            <div class="ratings-container">
+                                                <div class="ratings">
+                                                    <div class="ratings-result" data-result="80"></div>
+                                                </div><!-- End .ratings -->
+                                                <span class="ratings-amount">
+                                                    5 Reviews
+                                                </span>
+                                            </div><!-- End .rating-container -->
+                                            <h3 class="item-name"><a asp-action="Product">Фазелл консекватt</a></h3>
+                                            <div class="item-action">
+                                                <a href="#" class="item-add-btn">
+                                                    <span class="icon-cart-text">Добавить в корзину</span>
+                                                </a>
+                                                <div class="item-action-inner">
+                                                    <a href="#" class="icon-button icon-like">Избранное</a>
+                                                    <a href="#" class="icon-button icon-compare">Проверка</a>
+                                                </div><!-- End .item-action-inner -->
+                                            </div><!-- End .item-action -->
+                                        </div><!-- End .item-meta-container --> 
+                                    </div><!-- End .item -->
+
+                                    <div class="item item-hover">
+                                        <div class="item-image-wrapper">
+                                            <figure class="item-image-container">
+                                                <a asp-action="Product">
+                                                    <img src="~/images/products/item8.jpg" alt="item1" class="item-image">
+                                                    <img src="~/images/products/item8-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                </a>
+                                            </figure>
+                                            <div class="item-price-container">
+                                                <span class="item-price">₽100</span>
+                                            </div><!-- End .item-price-container -->
+                                            <span class="new-rect">Новинка</span>
+                                        </div><!-- End .item-image-wrapper -->
+                                        <div class="item-meta-container">
+                                            <div class="ratings-container">
+                                                <div class="ratings">
+                                                    <div class="ratings-result" data-result="99"></div>
+                                                </div><!-- End .ratings -->
+                                                <span class="ratings-amount">
+                                                    4 Reviews
+                                                </span>
+                                            </div><!-- End .rating-container -->
+                                            <h3 class="item-name"><a asp-action="Product">Фазелл консекватt</a></h3>
+                                            <div class="item-action">
+                                                <a href="#" class="item-add-btn">
+                                                    <span class="icon-cart-text">Добавить в корзину</span>
+                                                </a>
+                                                <div class="item-action-inner">
+                                                    <a href="#" class="icon-button icon-like">Избранное</a>
+                                                    <a href="#" class="icon-button icon-compare">Проверка</a>
+                                                </div><!-- End .item-action-inner -->
+                                            </div><!-- End .item-action -->
+                                        </div><!-- End .item-meta-container --> 
+                                    </div><!-- End .item -->
+
+                                    <div class="item item-hover">
+                                        <div class="item-image-wrapper">
+                                            <figure class="item-image-container">
+                                                <a asp-action="Product">
+                                                    <img src="~/images/products/item9.jpg" alt="item1" class="item-image">
+                                                    <img src="~/images/products/item9-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                </a>
+                                            </figure>
+                                            <div class="item-price-container">
+                                                <span class="old-price">₽100</span>
+                                                <span class="item-price">₽80</span>
+                                            </div><!-- End .item-price-container -->
+                                            <span class="discount-rect">-20%</span>
+                                        </div><!-- End .item-image-wrapper -->
+                                        <div class="item-meta-container">
+                                            <div class="ratings-container">
+                                                <div class="ratings">
+                                                    <div class="ratings-result" data-result="75"></div>
+                                                </div><!-- End .ratings -->
+                                                <span class="ratings-amount">
+                                                    2 Reviews
+                                                </span>
+                                            </div><!-- End .rating-container -->
+                                            <h3 class="item-name"><a asp-action="Product">Фазелл консекватt</a></h3>
+                                            <div class="item-action">
+                                                <a href="#" class="item-add-btn">
+                                                    <span class="icon-cart-text">Добавить в корзину</span>
+                                                </a>
+                                                <div class="item-action-inner">
+                                                    <a href="#" class="icon-button icon-like">Избранное</a>
+                                                    <a href="#" class="icon-button icon-compare">Проверка</a>
+                                                </div><!-- End .item-action-inner -->
+                                            </div><!-- End .item-action -->
+                                        </div><!-- End .item-meta-container --> 
+                                    </div><!-- End .item -->
+
+                                    <div class="item item-hover">
+                                        <div class="item-image-wrapper">
+                                            <figure class="item-image-container">
+                                                <a asp-action="Product">
+                                                    <img src="~/images/products/item6.jpg" alt="item1" class="item-image">
+                                                    <img src="~/images/products/item6-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                </a>
+                                            </figure>
+                                            <div class="item-price-container">
+                                                <span class="item-price">₽99</span>
+                                            </div><!-- End .item-price-container -->
+                                            <span class="new-rect">Новинка</span>
+                                        </div><!-- End .item-image-wrapper -->
+                                        <div class="item-meta-container">
+                                            <div class="ratings-container">
+                                                <div class="ratings">
+                                                    <div class="ratings-result" data-result="40"></div>
+                                                </div><!-- End .ratings -->
+                                                <span class="ratings-amount">
+                                                    3 Reviews
+                                                </span>
+                                            </div><!-- End .rating-container -->
+                                            <h3 class="item-name"><a asp-action="Product">Фазелл консекватt</a></h3>
+                                            <div class="item-action">
+                                                <a href="#" class="item-add-btn">
+                                                    <span class="icon-cart-text">Добавить в корзину</span>
+                                                </a>
+                                                <div class="item-action-inner">
+                                                    <a href="#" class="icon-button icon-like">Избранное</a>
+                                                    <a href="#" class="icon-button icon-compare">Проверка</a>
+                                                </div><!-- End .item-action-inner -->
+                                            </div><!-- End .item-action -->
+                                        </div><!-- End .item-meta-container --> 
+                                    </div><!-- End .item -->
+
+                                    <div class="item item-hover">
+                                        <div class="item-image-wrapper">
+                                            <figure class="item-image-container">
+                                                <a asp-action="Product">
+                                                    <img src="~/images/products/item7.jpg" alt="item1" class="item-image">
+                                                    <img src="~/images/products/item7-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                </a>
+                                            </figure>
+                                            <div class="item-price-container">
+                                                <span class="item-price">₽280</span>
+                                            </div><!-- End .item-price-container -->
+                                        </div><!-- End .item-image-wrapper -->
+                                        <div class="item-meta-container">
+                                            <div class="ratings-container">
+                                            </div><!-- End .rating-container -->
+                                            <h3 class="item-name"><a asp-action="Product">Фазелл консекватt</a></h3>
+                                            <div class="item-action">
+                                                <a href="#" class="item-add-btn">
+                                                    <span class="icon-cart-text">Добавить в корзину</span>
+                                                </a>
+                                                <div class="item-action-inner">
+                                                    <a href="#" class="icon-button icon-like">Избранное</a>
+                                                    <a href="#" class="icon-button icon-compare">Проверка</a>
+                                                </div><!-- End .item-action-inner -->
+                                            </div><!-- End .item-action -->
+                                        </div><!-- End .item-meta-container --> 
+                                    </div><!-- End .item -->
+
+                                    <div class="item item-hover">
+                                        <div class="item-image-wrapper">
+                                            <figure class="item-image-container">
+                                                <a asp-action="Product">
+                                                    <img src="~/images/products/item10.jpg" alt="item1" class="item-image">
+                                                    <img src="~/images/products/item10-hover.jpg" alt="item1  Hover" class="item-image-hover">
+                                                </a>
+                                            </figure>
+                                            <div class="item-price-container">
+                                                <span class="old-price">₽150</span>
+                                                <span class="item-price">₽120</span>
+                                            </div><!-- End .item-price-container -->
+                                        </div><!-- End .item-image-wrapper -->
+                                        <div class="item-meta-container">
+                                            <div class="ratings-container">
+                                            </div><!-- End .rating-container -->
+                                            <h3 class="item-name"><a asp-action="Product">Фазелл консекватt</a></h3>
+                                            <div class="item-action">
+                                                <a href="#" class="item-add-btn">
+                                                    <span class="icon-cart-text">Добавить в корзину</span>
+                                                </a>
+                                                <div class="item-action-inner">
+                                                    <a href="#" class="icon-button icon-like">Избранное</a>
+                                                    <a href="#" class="icon-button icon-compare">Проверка</a>
+                                                </div><!-- End .item-action-inner -->
+                                            </div><!-- End .item-action -->
+                                        </div><!-- End .item-meta-container --> 
+                                    </div><!-- End .item -->
+
+                                </div><!--purchased-items-slider -->
+                            </div><!-- End .purchased-items-container -->
+
+        			</div><!-- End .col-md-12 -->
+        		</div><!-- End .row -->
+			</div><!-- End .container -->
+        
+        </section><!-- End #content -->
